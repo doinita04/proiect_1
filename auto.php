@@ -7,7 +7,7 @@ $conn=new mysqli($server,$user,$password,$db);
 if($conn->connect_error) echo "Conexiunea esuata: ".$conn->connect_error;
 echo "Conexiunea OOP cu succes<br>";
 $sql = "INSERT INTO cars (Brand, Model, BodyType, Years,Combustible,Price) 
-VALUES ('".$_POST['brand']."', '".$_POST['model']."', '".$_POST['body_type']."', ".$_POST['year'].", '".$_POST['combustible']."', ".$_POST['price'].") ";
+VALUES ('".$_POST['brand']."', '".$_POST['model']."', '".$_POST['body_type']."', ".$_POST['year'].", '".$_POST['combustible']."', ".$_POST['Price'].") ";
 
 
 $result=$conn->query($sql);
